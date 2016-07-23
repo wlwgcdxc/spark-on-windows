@@ -18,7 +18,9 @@ spark on windows
     spark-daemon.cmd          其他start/stop脚本都是通过调用spark-daemon.cmd来完成功能的
     
     remote-slaves-getCredential.ps1   在进行远程机器登录的时候，需要远程机器的凭证，所以必须
-                                      先在远程机器上运行这个脚本，将凭证传到master点上                                                                                              
+                                      先在远程机器上运行这个脚本，将凭证传到master点上                                           
+                                      
+                                      
     remote-slaves-daemon.ps1         在登录远程slave节点，启动worker进程的时候，会调用这个脚本，登到远程机器，去起进程。
                                      认证方面是通过各个slave节点传过来的凭证进行认证的
 
